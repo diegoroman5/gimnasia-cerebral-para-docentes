@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponencialmente Ágil – Gimnasia Cerebral para Educadores | Evolucione</title>
+    <meta name="description" content="Curso de gimnasia cerebral para docentes. Ejercicios de 1-2 minutos para claridad mental, foco y presencia. +400 docentes, 95% satisfacción.">
+    
+    <!-- Google Fonts: Sora + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Brand Colors */
+            --color-dark: #0D0036;
+            --color-purple: #651FFF;
+            --color-purple-light: #7c4dff;
+            --color-cyan: #18FFFF;
+            --color-magenta: #FF0C88;
+            --color-coral: #F34D47;
+            --color-orange: #FFA111;
+            --color-purple-deep: #630782;
+            
+            /* Neutrals */
+            --color-white: #FFFFFF;
+            --color-bg: #fafbff;
+            --color-bg-soft: #f5f3ff;
+            --color-text: #2d2d3a;
+            --color-text-light: #5a5a6e;
+            --color-text-muted: #8888a0;
+            --color-border: #e8e8f0;
+            
+            /* Typography */
+            --font-display: 'Sora', sans-serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2.5rem;
+            --space-xl: 4rem;
+            --space-2xl: 6rem;
+            --space-3xl: 8rem;
+            
+            /* Sizing */
+            --max-width: 1100px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --border-radius-xl: 32px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-white);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        
+        /* ===== Layout ===== */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        section {
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            section {
+                padding: var(--space-2xl) 0;
+            }
+        }
+        
+        /* ===== Typography ===== */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-dark);
+        }
+        
+        h1 {
+            font-size: clamp(2.25rem, 5vw, 3.25rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: var(--space-md);
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        p {
+            margin-bottom: var(--space-sm);
+            color: var(--color-text-light);
+        }
+        
+        .lead {
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-magenta) 50%, var(--color-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+            padding: 1rem 2rem;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-magenta) 0%, var(--color-purple) 100%);
+            color: var(--color-white);
+            box-shadow: 0 4px 20px rgba(255, 12, 136, 0.35);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 12, 136, 0.45);
+        }
+        
+        .btn-secondary {
+            background: var(--color-white);
+            color: var(--color-purple);
+            border: 2px solid var(--color-purple);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-purple);
+            color: var(--color-white);
+        }
+        
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+        }
+        
+        /* ===== Decorative Shapes ===== */
+        .shape {
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .shape-1 { width: 200px; opacity: 0.6; }
+        .shape-2 { width: 150px; opacity: 0.5; }
+        .shape-3 { width: 120px; opacity: 0.4; }
+        
+        /* ===== Header/Nav ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--space-sm) 0;
+        }
+        
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            height: 40px;
+        }
+        
+        .logo img {
+            height: 100%;
+            width: auto;
+        }
+        
+        .header-cta {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.875rem;
+        }
+        
+        /* ===== Hero Section with Animated Gradient ===== */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: var(--space-2xl);
+            background: linear-gradient(40deg, rgb(13, 0, 54), rgb(40, 0, 80));
+            overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        /* Animated Gradient Background */
+        .hero-gradient-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .hero-gradient-bg .gradient-orb {
+            position: absolute;
+            border-radius: 50%;
+            mix-blend-mode: hard-light;
+            filter: blur(60px);
+            opacity: 0.8;
+        }
+        
+        .hero-gradient-bg .orb-1 {
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;
+            background: radial-gradient(circle at center, rgba(101, 31, 255, 0.8) 0%, rgba(101, 31, 255, 0) 50%);
+            animation: orbFloat1 8s ease-in-out infinite;
+        }
+        
+        .hero-gradient-bg .orb-2 {
+            width: 70%;
+            height: 70%;
+            top: 20%;
+            left: 15%;
+            background: radial-gradient(circle at center, rgba(255, 12, 136, 0.7) 0%, rgba(255, 12, 136, 0) 50%);
+            animation: orbFloat2 10s ease-in-out infinite;
+        }
+        
+        .hero-gradient-bg .orb-3 {
+            width: 60%;
+            height: 60%;
+            top: 30%;
+            right: 10%;
+            background: radial-gradient(circle at center, rgba(24, 255, 255, 0.6) 0%, rgba(24, 255, 255, 0) 50%);
+            animation: orbFloat3 12s ease-in-out infinite;
+        }
+        
+        .hero-gradient-bg .orb-4 {
+            width: 50%;
+            height: 50%;
+            bottom: 10%;
+            left: 20%;
+            background: radial-gradient(circle at center, rgba(255, 161, 17, 0.5) 0%, rgba(255, 161, 17, 0) 50%);
+            animation: orbFloat4 9s ease-in-out infinite;
+        }
+        
+        .hero-gradient-bg .orb-5 {
+            width: 65%;
+            height: 65%;
+            top: 5%;
+            right: 5%;
+            background: radial-gradient(circle at center, rgba(99, 7, 130, 0.6) 0%, rgba(99, 7, 130, 0) 50%);
+            animation: orbFloat5 11s ease-in-out infinite;
+        }
+        
+        /* Interactive orb that follows mouse */
+        .hero-gradient-bg .orb-interactive {
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle at center, rgba(140, 100, 255, 0.6) 0%, rgba(140, 100, 255, 0) 50%);
+            pointer-events: none;
+            transition: transform 0.3s ease-out;
+            top: 0;
+            left: 0;
+        }
+        
+        @keyframes orbFloat1 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        
+        @keyframes orbFloat2 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-40px, 30px) rotate(180deg); }
+        }
+        
+        @keyframes orbFloat3 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, 30px) scale(1.05); }
+            50% { transform: translate(20px, -40px) scale(0.95); }
+            75% { transform: translate(-30px, 20px) scale(1.02); }
+        }
+        
+        @keyframes orbFloat4 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(60px, -30px); }
+        }
+        
+        @keyframes orbFloat5 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-50px, 40px) rotate(120deg); }
+            66% { transform: translate(40px, -20px) rotate(240deg); }
+        }
+        
+        /* Noise overlay for texture */
+        .hero-gradient-bg::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        
+        .hero .container {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 900px) {
+            .hero .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--color-cyan);
+            padding: 0.5rem 1.25rem;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            border: 1px solid rgba(24, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero h1 {
+            margin-bottom: var(--space-md);
+            color: var(--color-white);
+        }
+        
+        .hero .gradient-text {
+            background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-magenta) 50%, var(--color-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 500px;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .hero-benefits {
+            display: grid;
+            gap: 0.75rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .hero-benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-white);
+        }
+        
+        .hero-benefit-icon {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-purple) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(24, 255, 255, 0.4);
+        }
+        
+        .hero-benefit-icon svg {
+            width: 16px;
+            height: 16px;
+            color: white;
+        }
+        
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-shape-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .hero-shape-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Microcopy */
+        .microcopy {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .hero .microcopy {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .microcopy span {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        
+        .microcopy svg {
+            width: 18px;
+            height: 18px;
+            color: var(--color-cyan);
+        }
+        
+        .hero .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--color-white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: var(--color-white);
+        }
+        
+        /* ===== Video Section ===== */
+        .video-section {
+            background: var(--color-dark);
+            padding: var(--space-2xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/Fondo_4.png') center/cover;
+            opacity: 0.3;
+        }
+        
+        .video-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .video-section h2 {
+            color: var(--color-white);
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .video-wrapper iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+        
+        /* ===== Realidad Section ===== */
+        .realidad {
+            background: var(--color-white);
+            position: relative;
+        }
+        
+        .realidad .container {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        @media (min-width: 900px) {
+            .realidad .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .realidad-content {
+            max-width: 550px;
+        }
+        
+        .realidad-image {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .realidad-image img {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .problem-list {
+            list-style: none;
+            margin: var(--space-lg) 0;
+        }
+        
+        .problem-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text);
+        }
+        
+        .problem-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .problem-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: var(--color-coral);
+            margin-top: 2px;
+        }
+        
+        .realidad-closing {
+            font-style: italic;
+            color: var(--color-purple);
+            padding-left: var(--space-md);
+            border-left: 4px solid var(--color-purple);
+            margin-top: var(--space-lg);
+        }
+        
+        /* ===== Cuerpo-Mente Section ===== */
+        .cuerpo-mente {
+            background: linear-gradient(135deg, var(--color-bg-soft) 0%, var(--color-white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cuerpo-mente .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .highlight-box {
+            background: var(--color-white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-lg);
+            margin-top: var(--space-lg);
+            box-shadow: 0 10px 40px rgba(101, 31, 255, 0.1);
+            border: 1px solid rgba(101, 31, 255, 0.1);
+        }
+        
+        .highlight-box p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            font-family: var(--font-display);
+            margin: 0;
+        }
+        
+        /* ===== Propuesta Section ===== */
+        .propuesta {
+            background: var(--color-white);
+        }
+        
+        .propuesta-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+        }
+        
+        .propuesta-grid {
+            display: grid;
+            gap: var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            .propuesta-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .propuesta-card {
+            padding: var(--space-lg);
+            border-radius: var(--border-radius-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .propuesta-card.no-es {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+        }
+        
+        .propuesta-card.es {
+            background: linear-gradient(135deg, rgba(101, 31, 255, 0.05) 0%, rgba(24, 255, 255, 0.05) 100%);
+            border: 2px solid var(--color-purple);
+        }
+        
+        .propuesta-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: var(--space-md);
+            font-size: 1.5rem;
+        }
+        
+        .propuesta-card.no-es h3 {
+            color: var(--color-text-muted);
+        }
+        
+        .propuesta-card.es h3 {
+            color: var(--color-purple);
+        }
+        
+        .propuesta-list {
+            list-style: none;
+        }
+        
+        .propuesta-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--color-text-light);
+        }
+        
+        .propuesta-list li::before {
+            content: "×";
+            position: absolute;
+            left: 0;
+            color: var(--color-text-muted);
+            font-weight: bold;
+        }
+        
+        .propuesta-card.es .propuesta-list li::before {
+            content: "✓";
+            color: var(--color-purple);
+        }
+        
+        .pilares {
+            display: grid;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+        
+        .pilar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pilar-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-magenta) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .pilar-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+        
+        .pilar span {
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+        
+        /* ===== Uso Práctico Section ===== */
+        .uso-practico {
+            background: var(--color-dark);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .uso-practico::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/Fondo_4.png') center/cover;
+            opacity: 0.2;
+        }
+        
+        .uso-practico .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .uso-practico h2 {
+            color: var(--color-white);
+            text-align: center;
+        }
+        
+        .uso-practico .lead {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+        
+        .uso-steps {
+            display: grid;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+        
+        @media (min-width: 768px) {
+            .uso-steps {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .uso-step {
+            text-align: center;
+            padding: var(--space-lg);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .uso-step-number {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-purple) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-md);
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+        
+        .uso-step h3 {
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+        }
+        
+        .uso-step p {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+        }
+        
+        .uso-moments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            justify-content: center;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .uso-moment {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            color: var(--color-white);
+            font-weight: 500;
+        }
+        
+        .uso-moment svg {
+            width: 20px;
+            height: 20px;
+            color: var(--color-cyan);
+        }
+        
+        .uso-quote {
+            text-align: center;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-cyan);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* ===== Beneficios Section ===== */
+        .beneficios {
+            background: var(--color-white);
+            position: relative;
+        }
+        
+        .beneficios .container {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        @media (min-width: 900px) {
+            .beneficios .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .beneficios-image {
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+        
+        @media (min-width: 900px) {
+            .beneficios-image {
+                order: 1;
+            }
+        }
+        
+        .beneficios-image img {
+            max-width: 350px;
+            width: 100%;
+        }
+        
+        .beneficios-content {
+            order: 1;
+        }
+        
+        @media (min-width: 900px) {
+            .beneficios-content {
+                order: 2;
+            }
+        }
+        
+        .beneficio-grid {
+            display: grid;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        
+        .beneficio-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: var(--space-md);
+            background: var(--color-bg-soft);
+            border-radius: var(--border-radius);
+        }
+        
+        .beneficio-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-coral) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .beneficio-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+        
+        .beneficio-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .beneficio-content p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        /* ===== Testimonios Section - Circular 3D Carousel ===== */
+        .testimonios {
+            background: linear-gradient(135deg, #f7f7fa 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+            padding: var(--space-3xl) 0;
+        }
+        
+        .testimonios h2 {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .testimonial-carousel {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            gap: var(--space-xl);
+        }
+        
+        @media (min-width: 900px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+        
+        /* 3D Image Container */
+        .testimonial-images {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        
+        .testimonial-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 50px rgba(101, 31, 255, 0.2);
+            transition: all 0.8s cubic-bezier(0.4, 2, 0.3, 1);
+            cursor: pointer;
+        }
+        
+        .testimonial-image.active {
+            z-index: 3;
+            opacity: 1;
+            transform: translateX(0) translateY(0) scale(1) rotateY(0deg);
+        }
+        
+        .testimonial-image.prev {
+            z-index: 2;
+            opacity: 1;
+            transform: translateX(-70px) translateY(-50px) scale(0.85) rotateY(15deg);
+        }
+        
+        .testimonial-image.next {
+            z-index: 2;
+            opacity: 1;
+            transform: translateX(70px) translateY(-50px) scale(0.85) rotateY(-15deg);
+        }
+        
+        .testimonial-image.hidden {
+            z-index: 1;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(0) translateY(0) scale(0.7);
+        }
+        
+        /* Testimonial Content */
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .testimonial-text-container {
+            position: relative;
+            min-height: 200px;
+        }
+        
+        .testimonial-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            pointer-events: none;
+        }
+        
+        .testimonial-slide.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            position: relative;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            font-style: italic;
+            margin-bottom: var(--space-lg);
+            position: relative;
+        }
+        
+        .testimonial-quote::before {
+            content: """;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 4rem;
+            font-family: Georgia, serif;
+            color: var(--color-purple);
+            opacity: 0.2;
+            line-height: 1;
+        }
+        
+        .testimonial-author-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 0.25rem;
+        }
+        
+        .testimonial-author-role {
+            font-size: 1rem;
+            color: var(--color-text-muted);
+        }
+        
+        /* Arrow Buttons */
+        .testimonial-arrows {
+            display: flex;
+            gap: 1rem;
+            margin-top: var(--space-lg);
+        }
+        
+        .testimonial-arrow {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--color-dark);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-arrow:hover {
+            background: var(--color-purple);
+            transform: scale(1.1);
+        }
+        
+        .testimonial-arrow svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+        
+        /* Word animation */
+        .testimonial-quote .word {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(5px);
+            animation: wordReveal 0.3s ease forwards;
+        }
+        
+        @keyframes wordReveal {
+            to {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+            }
+        }
+        
+        /* ===== Aula Section ===== */
+        .aula {
+            background: var(--color-white);
+        }
+        
+        .aula .container {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        @media (min-width: 900px) {
+            .aula .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .aula-image {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .aula-image img {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .aula-content {
+            max-width: 500px;
+        }
+        
+        .aula-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: var(--space-md);
+            background: var(--color-bg-soft);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-purple);
+            margin-top: var(--space-md);
+        }
+        
+        .aula-note-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: var(--color-purple);
+        }
+        
+        .aula-note p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        /* ===== Para Ti Section ===== */
+        .para-ti {
+            background: linear-gradient(135deg, var(--color-bg-soft) 0%, var(--color-white) 100%);
+        }
+        
+        .para-ti h2 {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .para-ti-grid {
+            display: grid;
+            gap: var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            .para-ti-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .para-ti-card {
+            padding: var(--space-lg);
+            border-radius: var(--border-radius-lg);
+        }
+        
+        .para-ti-card.si {
+            background: linear-gradient(135deg, rgba(24, 255, 255, 0.1) 0%, rgba(101, 31, 255, 0.1) 100%);
+            border: 2px solid var(--color-cyan);
+        }
+        
+        .para-ti-card.no {
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+        }
+        
+        .para-ti-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+        }
+        
+        .para-ti-card.si h3 {
+            color: var(--color-purple);
+        }
+        
+        .para-ti-card.no h3 {
+            color: var(--color-text-muted);
+        }
+        
+        .para-ti-card ul {
+            list-style: none;
+            margin-top: var(--space-md);
+        }
+        
+        .para-ti-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.75rem;
+            position: relative;
+            color: var(--color-text);
+        }
+        
+        .para-ti-card.si ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-cyan);
+            font-weight: bold;
+        }
+        
+        .para-ti-card.no ul li::before {
+            content: "×";
+            position: absolute;
+            left: 0;
+            color: var(--color-text-muted);
+            font-weight: bold;
+        }
+        
+        /* ===== FAQ Section ===== */
+        .faq {
+            background: var(--color-white);
+        }
+        
+        .faq h2 {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: var(--space-md) 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+        
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--color-purple);
+            font-weight: 400;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        
+        .faq-answer p {
+            padding-bottom: var(--space-md);
+            font-size: 0.95rem;
+        }
+        
+        /* ===== Resultados Section ===== */
+        .resultados {
+            background: var(--color-dark);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .resultados::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/Fondo_4.png') center/cover;
+            opacity: 0.2;
+        }
+        
+        .resultados .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .resultados h2 {
+            color: var(--color-white);
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .resultados-stats {
+            display: grid;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+        
+        @media (min-width: 768px) {
+            .resultados-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .stat {
+            text-align: center;
+            padding: var(--space-lg);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-magenta) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.5rem;
+        }
+        
+        .resultados-text {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* ===== Autora Section ===== */
+        .autora {
+            background: var(--color-white);
+        }
+        
+        .autora .container {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        @media (min-width: 900px) {
+            .autora .container {
+                grid-template-columns: auto 1fr;
+            }
+        }
+        
+        .autora-photo {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .autora-photo img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+            border: 6px solid var(--color-purple);
+            box-shadow: 0 20px 60px rgba(101, 31, 255, 0.2);
+        }
+        
+        .autora-info h2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .autora-info .role {
+            color: var(--color-purple);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        /* ===== CTA Final Section ===== */
+        .cta-final {
+            background: linear-gradient(135deg, var(--color-dark) 0%, #1a0050 100%);
+            color: var(--color-white);
+            padding: var(--space-3xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-final::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/Fondo_4.png') center/cover;
+            opacity: 0.15;
+        }
+        
+        .cta-final .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        @media (min-width: 900px) {
+            .cta-final .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .cta-content h2 {
+            color: var(--color-white);
+            margin-bottom: var(--space-md);
+        }
+        
+        .cta-content .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.125rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .cta-includes {
+            list-style: none;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .cta-includes li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            color: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cta-includes li:last-child {
+            border-bottom: none;
+        }
+        
+        .cta-includes svg {
+            width: 24px;
+            height: 24px;
+            color: var(--color-cyan);
+            flex-shrink: 0;
+        }
+        
+        .price-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: var(--border-radius-xl);
+            padding: var(--space-xl);
+            text-align: center;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+        }
+        
+        .price-card-image {
+            position: absolute;
+            top: -60px;
+            right: -30px;
+            width: 140px;
+            z-index: 1;
+        }
+        
+        .price-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-coral) 100%);
+            color: var(--color-white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        .price-amount {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-amount span {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        
+        .price-note {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .price-card .btn-primary {
+            width: 100%;
+            padding: 1.25rem 2rem;
+            font-size: 1.125rem;
+        }
+        
+        .price-card .microcopy {
+            justify-content: center;
+            margin-top: var(--space-md);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .price-card .microcopy svg {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* ===== Footer ===== */
+        footer {
+            background: var(--color-dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: var(--space-lg) 0;
+        }
+        
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-md);
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+        
+        footer .logo img {
+            height: 36px;
+        }
+        
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--color-cyan);
+        }
+        
+        /* ===== Animations ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .hero-badge,
+        .hero h1,
+        .hero-subtitle,
+        .hero-benefits,
+        .btn-group {
+            animation: fadeInUp 0.7s ease-out forwards;
+        }
+        
+        .hero h1 { animation-delay: 0.1s; }
+        .hero-subtitle { animation-delay: 0.2s; }
+        .hero-benefits { animation-delay: 0.3s; }
+        .btn-group { animation-delay: 0.4s; }
+        
+        .hero-image img {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Scroll reveal */
+        section .container {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        section.visible .container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hero .container {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo-evolucione-1-scaled.png" alt="Evolucione - Tu universo de aprendizaje">
+            </div>
+            <a href="#comprar" class="btn btn-primary header-cta">Comprar curso</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero-section">
+        <!-- Animated Gradient Background -->
+        <div class="hero-gradient-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="gradient-orb orb-4"></div>
+            <div class="gradient-orb orb-5"></div>
+            <div class="gradient-orb orb-interactive" id="interactive-orb"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Gimnasia Cerebral para Educadores
+                </div>
+                
+                <h1>Exponencialmente Ágil<br><span class="gradient-text">Cuidar la mente desde donde enseñas</span></h1>
+                
+                <p class="hero-subtitle">
+                    Un curso práctico de autorregulación cognitiva diseñado para docentes. 
+                    Ejercicios de 1–2 minutos que puedes usar antes de la jornada, entre clases 
+                    o al finalizar el día.
+                </p>
+                
+                <div class="hero-benefits">
+                    <div class="hero-benefit">
+                        <div class="hero-benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Mente más despejada para tomar decisiones
+                    </div>
+                    <div class="hero-benefit">
+                        <div class="hero-benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Atención más estable durante la jornada
+                    </div>
+                    <div class="hero-benefit">
+                        <div class="hero-benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Cuerpo con menos tensión acumulada
+                    </div>
+                    <div class="hero-benefit">
+                        <div class="hero-benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Mayor presencia y claridad al enseñar
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="https://hotmart.com/es/marketplace/productos/exponencialmente-agil-gimnasia-cerebral/C103235667V" target="_blank" class="btn btn-secondary">Ver detalles del curso</a>
+                    <a href="https://pay.hotmart.com/C103235667V?bid=1769014754947" target="_blank" class="btn btn-primary">Comprar curso ahora</a>
+                </div>
+                
+                <div class="microcopy">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Acceso seguro por Hotmart
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Garantía de 7 días
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        Sin presión ni urgencia
+                    </span>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="assets/ema_milena_3.png" alt="Milena Sandoval - Gimnasia Cerebral">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Conoce el curso en 2 minutos</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/EQil5GmUF_s" 
+                    title="Exponencialmente Ágil - Gimnasia Cerebral para Educadores"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Realidad Section -->
+    <section class="realidad">
+        <div class="container">
+            <div class="realidad-content">
+                <h2>La realidad mental del trabajo docente</h2>
+                
+                <p class="lead">
+                    Cada día, entras al aula con una lista de pendientes que no termina. 
+                    Grupos diversos, demandas administrativas, situaciones emocionales de 
+                    estudiantes, y la expectativa de mantener energía desde la primera 
+                    hasta la última hora.
+                </p>
+                
+                <ul class="problem-list">
+                    <li>
+                        <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Fatiga mental que se acumula conforme avanza la semana</span>
+                    </li>
+                    <li>
+                        <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Sensación de saturación ante tantas demandas simultáneas</span>
+                    </li>
+                    <li>
+                        <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Dificultad para sostener la atención en las últimas horas</span>
+                    </li>
+                    <li>
+                        <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Tensión física en cuello, hombros y espalda</span>
+                    </li>
+                    <li>
+                        <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Llegar a casa con la mente aún en el trabajo</span>
+                    </li>
+                </ul>
+                
+                <p class="realidad-closing">
+                    Esto no es falta de vocación ni de capacidad. Es la exigencia sostenida 
+                    de un trabajo que demanda mucho más de lo que suele reconocerse.
+                </p>
+            </div>
+            
+            <div class="realidad-image">
+                <img src="assets/EMA_EXPLICACION.png" alt="Docente trabajando">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuerpo-Mente Section -->
+    <section class="cuerpo-mente">
+        <div class="container">
+            <h2>Por qué el cuerpo influye en la claridad mental</h2>
+            
+            <p class="lead">
+                Cuando la mente se satura, el cuerpo lo refleja: la respiración se vuelve 
+                superficial, los hombros se tensan, la atención se fragmenta. Y esto funciona 
+                también en sentido contrario.
+            </p>
+            
+            <p>
+                La neurociencia muestra que ciertos movimientos, patrones de respiración y 
+                formas de dirigir la atención pueden ayudar a reorganizar el estado mental. 
+                No se trata de "relajarse" ni de forzar el pensamiento positivo.
+            </p>
+            
+            <div class="highlight-box">
+                <p>
+                    "Regular la mente puede empezar moviendo el cuerpo. 
+                    Es una vía accesible, práctica y que no depende de condiciones externas."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta Section -->
+    <section class="propuesta" id="detalles">
+        <div class="container">
+            <div class="propuesta-header">
+                <h2>Qué propone este curso</h2>
+                <p class="lead">
+                    <strong>Exponencialmente Ágil</strong> es un curso de gimnasia cerebral 
+                    diseñado específicamente para el contexto docente.
+                </p>
+            </div>
+            
+            <div class="propuesta-grid">
+                <div class="propuesta-card no-es">
+                    <h3>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                        No es
+                    </h3>
+                    <ul class="propuesta-list">
+                        <li>Una terapia o tratamiento clínico</li>
+                        <li>Una metodología pedagógica nueva</li>
+                        <li>Una capacitación teórica más</li>
+                        <li>Un programa que requiere horas de estudio</li>
+                        <li>Una promesa de resultados inmediatos</li>
+                    </ul>
+                </div>
+                
+                <div class="propuesta-card es">
+                    <h3>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Es
+                    </h3>
+                    <p style="margin-bottom: var(--space-md); color: var(--color-text);">
+                        Una herramienta práctica de autorregulación basada en tres pilares:
+                    </p>
+                    <div class="pilares">
+                        <div class="pilar">
+                            <div class="pilar-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                            </div>
+                            <span>Movimientos simples y accesibles</span>
+                        </div>
+                        <div class="pilar">
+                            <div class="pilar-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <span>Respiración consciente</span>
+                        </div>
+                        <div class="pilar">
+                            <div class="pilar-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/></svg>
+                            </div>
+                            <span>Atención dirigida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uso Práctico Section -->
+    <section class="uso-practico">
+        <div class="container">
+            <h2>Cómo se usa en la práctica</h2>
+            <p class="lead">Sin rigidez, sin evaluaciones, a tu ritmo.</p>
+            
+            <div class="uso-steps">
+                <div class="uso-step">
+                    <div class="uso-step-number">1</div>
+                    <h3>Elige un ejercicio</h3>
+                    <p>Tienes 24 ejercicios disponibles. No hay orden obligatorio.</p>
+                </div>
+                <div class="uso-step">
+                    <div class="uso-step-number">2</div>
+                    <h3>Practica 1–2 minutos</h3>
+                    <p>Cada ejercicio está diseñado para momentos breves del día.</p>
+                </div>
+                <div class="uso-step">
+                    <div class="uso-step-number">3</div>
+                    <h3>Integra a tu ritmo</h3>
+                    <p>Úsalo cuando lo necesites, sin presión de "terminar" el curso.</p>
+                </div>
+            </div>
+            
+            <div class="uso-moments">
+                <div class="uso-moment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Antes de iniciar la jornada
+                </div>
+                <div class="uso-moment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg>
+                    Entre clases
+                </div>
+                <div class="uso-moment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Al finalizar el día
+                </div>
+            </div>
+            
+            <p class="uso-quote">"No suma carga a tu trabajo, te ayuda a descargar."</p>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section class="beneficios">
+        <div class="container">
+            <div class="beneficios-image">
+                <img src="assets/EMA_BENEFICIOS__1_.png" alt="Beneficios de la gimnasia cerebral">
+            </div>
+            
+            <div class="beneficios-content">
+                <h2>Beneficios que suelen notar los docentes</h2>
+                <p class="lead">No son promesas, sino experiencias comunes de quienes usan el curso.</p>
+                
+                <div class="beneficio-grid">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        </div>
+                        <div class="beneficio-content">
+                            <h4>Mente más despejada</h4>
+                            <p>Mayor claridad para tomar decisiones durante el día</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                        </div>
+                        <div class="beneficio-content">
+                            <h4>Atención más estable</h4>
+                            <p>Mantener el foco incluso en las últimas horas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div class="beneficio-content">
+                            <h4>Mayor presencia</h4>
+                            <p>Estar realmente en el aula, no solo físicamente</p>
+                        </div>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <div class="beneficio-content">
+                            <h4>Mejor transición al hogar</h4>
+                            <p>Llegar a casa pudiendo desconectar del trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section - Circular 3D Carousel -->
+    <section class="testimonios">
+        <div class="container">
+            <h2>Lo que dicen los docentes</h2>
+            
+            <div class="testimonial-carousel">
+                <div class="testimonial-grid">
+                    <!-- Images Container -->
+                    <div class="testimonial-images" id="testimonial-images">
+                        <img src="assets/maestra_Laura.jpg" alt="Laura Martin" class="testimonial-image active" data-index="0">
+                        <img src="assets/Maestro_Luis.jpg" alt="Luis Pérez" class="testimonial-image next" data-index="1">
+                        <img src="assets/maestra_Ana.jpg" alt="Ana Julia Hernández" class="testimonial-image prev" data-index="2">
+                    </div>
+                    
+                    <!-- Content Container -->
+                    <div class="testimonial-content">
+                        <div class="testimonial-text-container" id="testimonial-text">
+                            <!-- Slide 1 -->
+                            <div class="testimonial-slide active" data-index="0">
+                                <p class="testimonial-quote" id="quote-0">
+                                    "Después de 2 semanas notaba más claridad mental. Los ejercicios son cortos y funcionan. Lo recomiendo a cualquier docente que sienta fatiga mental."
+                                </p>
+                                <h4 class="testimonial-author-name">Laura Martin</h4>
+                                <p class="testimonial-author-role">Docente de Secundaria</p>
+                            </div>
+                            
+                            <!-- Slide 2 -->
+                            <div class="testimonial-slide" data-index="1">
+                                <p class="testimonial-quote" id="quote-1">
+                                    "Lo que más me gustó es que no agrega carga. Se adapta a mi día, no al revés. Puedo hacer los ejercicios entre clases sin problema."
+                                </p>
+                                <h4 class="testimonial-author-name">Luis Pérez</h4>
+                                <p class="testimonial-author-role">Director de Primaria</p>
+                            </div>
+                            
+                            <!-- Slide 3 -->
+                            <div class="testimonial-slide" data-index="2">
+                                <p class="testimonial-quote" id="quote-2">
+                                    "Me gusta porque son ejercicios simples pero retadores y puedo ir avanzando a mi ritmo. La comunidad EMA también es un gran apoyo."
+                                </p>
+                                <h4 class="testimonial-author-name">Ana Julia Hernández</h4>
+                                <p class="testimonial-author-role">Docente de Preparatoria</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <div class="testimonial-arrows">
+                            <button class="testimonial-arrow" id="prev-testimonial" aria-label="Testimonio anterior">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="testimonial-arrow" id="next-testimonial" aria-label="Siguiente testimonio">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aula Section -->
+    <section class="aula">
+        <div class="container">
+            <div class="aula-image">
+                <img src="assets/EMA-AULA.png" alt="Gimnasia cerebral en el aula">
+            </div>
+            
+            <div class="aula-content">
+                <h2>¿Se puede usar también en el aula?</h2>
+                
+                <p class="lead">
+                    El curso está diseñado para el docente, para tu propio bienestar cognitivo. 
+                    Sin embargo, algunos ejercicios pueden adaptarse como pausas breves con 
+                    estudiantes.
+                </p>
+                
+                <div class="aula-note">
+                    <svg class="aula-note-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    <p>
+                        <strong>Nota importante:</strong> No prometemos mejoras académicas ni 
+                        cambios conductuales en los estudiantes. Lo que ofrecemos es una herramienta 
+                        para ti, que eventualmente puede tener aplicaciones adicionales según 
+                        tu criterio profesional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Ti Section -->
+    <section class="para-ti">
+        <div class="container">
+            <h2>¿Este curso es para ti?</h2>
+            
+            <div class="para-ti-grid">
+                <div class="para-ti-card si">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Es para ti si...
+                    </h3>
+                    <ul>
+                        <li>Sientes fatiga mental recurrente por el trabajo docente</li>
+                        <li>Buscas claridad y foco, no "motivación" ni frases inspiracionales</li>
+                        <li>Valoras propuestas sobrias y realistas</li>
+                        <li>Prefieres herramientas prácticas sobre teoría extensa</li>
+                        <li>Quieres algo que se adapte a tu ritmo, sin presiones</li>
+                        <li>Entiendes que los cambios requieren práctica sostenida</li>
+                    </ul>
+                </div>
+                
+                <div class="para-ti-card no">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                        No es para ti si...
+                    </h3>
+                    <ul>
+                        <li>Buscas soluciones mágicas o resultados inmediatos</li>
+                        <li>Esperas una nueva metodología pedagógica</li>
+                        <li>Necesitas formación terapéutica o clínica</li>
+                        <li>Prefieres cursos con evaluaciones y certificaciones extensas</li>
+                        <li>Buscas contenido motivacional o de autoayuda</li>
+                        <li>No estás dispuesto/a a dedicar unos minutos diarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Dudas frecuentes</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuánto tiempo necesito dedicarle?</button>
+                    <div class="faq-answer">
+                        <p>Los ejercicios duran entre 1 y 2 minutos. Puedes hacer uno o varios al día, según tu disponibilidad. No hay un mínimo obligatorio.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Necesito ser constante para ver resultados?</button>
+                    <div class="faq-answer">
+                        <p>La práctica regular ayuda a consolidar los beneficios, pero no hay presión de "cumplir" un calendario. Úsalo cuando lo necesites y a tu ritmo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo funciona el acceso por Hotmart?</button>
+                    <div class="faq-answer">
+                        <p>Al comprar, recibes acceso inmediato a la plataforma de Hotmart donde están todos los contenidos. Puedes acceder desde cualquier dispositivo, cuando quieras.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Por cuánto tiempo tengo acceso al curso?</button>
+                    <div class="faq-answer">
+                        <p>El acceso es permanente. Una vez que compras, el curso es tuyo y puedes volver a él siempre que lo necesites.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué pasa si no me convence el curso?</button>
+                    <div class="faq-answer">
+                        <p>Tienes 7 días de garantía. Si dentro de ese período decides que no es para ti, puedes solicitar la devolución completa sin explicaciones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Necesito conocimientos previos de gimnasia cerebral?</button>
+                    <div class="faq-answer">
+                        <p>No. El curso está diseñado para cualquier docente, sin importar su experiencia previa. Todo se explica de forma clara y práctica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados Section -->
+    <section class="resultados">
+        <div class="container">
+            <h2>Resultados y confianza</h2>
+            
+            <div class="resultados-stats">
+                <div class="stat">
+                    <div class="stat-number">+400</div>
+                    <div class="stat-label">docentes han accedido al curso</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">de satisfacción reportada</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">ejercicios prácticos disponibles</div>
+                </div>
+            </div>
+            
+            <p class="resultados-text">
+                Esta es una propuesta seria, diseñada desde el conocimiento del contexto 
+                docente real. Sin promesas exageradas, sin urgencias artificiales. 
+                La información está disponible para que evalúes con tu propio criterio 
+                profesional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Autora Section -->
+    <section class="autora">
+        <div class="container">
+            <div class="autora-photo">
+                <img src="assets/ema_milena_4.png" alt="Milena Sandoval">
+            </div>
+            
+            <div class="autora-info">
+                <h2>Milena Sandoval</h2>
+                <p class="role">Educadora · Especialista en Gimnasia Cerebral · CEO de Evolucione</p>
+                <p>
+                    Con años de experiencia en el ámbito educativo, Milena desarrolló este 
+                    curso entendiendo las demandas reales del trabajo docente. Su enfoque 
+                    es práctico, respetuoso y alejado de promesas terapéuticas.
+                </p>
+                <p>
+                    A través de Evolucione, ha trabajado con cientos de educadores en 
+                    México, Colombia y Perú, siempre con el mismo principio: ofrecer 
+                    herramientas que realmente puedan integrarse en el día a día de 
+                    quien enseña.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final" id="comprar">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Exponencialmente Ágil</h2>
+                <p class="subtitle">
+                    Una herramienta práctica para cuidar tu mente desde donde enseñas. 
+                    Sin agregar carga, sin presiones.
+                </p>
+                
+                <ul class="cta-includes">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        24 ejercicios prácticos de gimnasia cerebral
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        4 clases pregrabadas con explicaciones claras
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Acceso a la comunidad EMA de docentes
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Certificado de finalización
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Acceso permanente al contenido
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="price-card">
+                <img src="assets/jorgito-ahorro.png" alt="" class="price-card-image">
+                <div class="price-badge">Oferta especial</div>
+                <div class="price-amount">$300 <span>MXN</span></div>
+                <div class="price-note">Pago único · Acceso de por vida</div>
+                
+                <a href="https://pay.hotmart.com/C103235667V?bid=1769014754947" target="_blank" class="btn btn-primary">
+                    Comprar curso ahora
+                </a>
+                
+                <div class="microcopy">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Pago seguro
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        7 días de garantía
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo-evolucione-1-scaled.png" alt="Evolucione">
+            </div>
+            <p>
+                © 2025 Evolucione · Exponencialmente Ágil<br>
+                <a href="#">Términos y condiciones</a> · <a href="#">Política de privacidad</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Interactive gradient orb follows mouse
+        const heroSection = document.getElementById('hero-section');
+        const interactiveOrb = document.getElementById('interactive-orb');
+        
+        let curX = 0;
+        let curY = 0;
+        let tgX = 0;
+        let tgY = 0;
+        
+        function animateOrb() {
+            curX += (tgX - curX) / 15;
+            curY += (tgY - curY) / 15;
+            if (interactiveOrb) {
+                interactiveOrb.style.transform = `translate(${curX - interactiveOrb.offsetWidth / 2}px, ${curY - interactiveOrb.offsetHeight / 2}px)`;
+            }
+            requestAnimationFrame(animateOrb);
+        }
+        
+        heroSection.addEventListener('mousemove', (e) => {
+            const rect = heroSection.getBoundingClientRect();
+            tgX = e.clientX - rect.left;
+            tgY = e.clientY - rect.top;
+        });
+        
+        animateOrb();
+        
+        // Scroll reveal
+        const sections = document.querySelectorAll('section');
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+        
+        // Circular Testimonials Carousel
+        const testimonialImages = document.querySelectorAll('.testimonial-image');
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.getElementById('prev-testimonial');
+        const nextBtn = document.getElementById('next-testimonial');
+        let currentTestimonial = 0;
+        const totalTestimonials = testimonialImages.length;
+        let autoplayInterval;
+        
+        function updateTestimonials(index) {
+            // Update images
+            testimonialImages.forEach((img, i) => {
+                img.classList.remove('active', 'prev', 'next', 'hidden');
+                
+                if (i === index) {
+                    img.classList.add('active');
+                } else if (i === (index - 1 + totalTestimonials) % totalTestimonials) {
+                    img.classList.add('prev');
+                } else if (i === (index + 1) % totalTestimonials) {
+                    img.classList.add('next');
+                } else {
+                    img.classList.add('hidden');
+                }
+            });
+            
+            // Update text slides
+            testimonialSlides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                    // Animate words
+                    animateWords(slide.querySelector('.testimonial-quote'));
+                }
+            });
+        }
+        
+        function animateWords(quoteElement) {
+            if (!quoteElement) return;
+            const text = quoteElement.textContent;
+            const words = text.split(' ');
+            quoteElement.innerHTML = words.map((word, i) => 
+                `<span class="word" style="animation-delay: ${i * 0.03}s">${word}</span>`
+            ).join(' ');
+        }
+        
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            updateTestimonials(currentTestimonial);
+        }
+        
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+            updateTestimonials(currentTestimonial);
+        }
+        
+        // Click handlers
+        nextBtn.addEventListener('click', () => {
+            nextTestimonial();
+            resetAutoplay();
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            prevTestimonial();
+            resetAutoplay();
+        });
+        
+        // Click on images to navigate
+        testimonialImages.forEach((img, i) => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('prev')) {
+                    prevTestimonial();
+                    resetAutoplay();
+                } else if (img.classList.contains('next')) {
+                    nextTestimonial();
+                    resetAutoplay();
+                }
+            });
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevTestimonial();
+                resetAutoplay();
+            } else if (e.key === 'ArrowRight') {
+                nextTestimonial();
+                resetAutoplay();
+            }
+        });
+        
+        // Autoplay
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextTestimonial, 5000);
+        }
+        
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+        
+        // Initialize
+        animateWords(document.querySelector('.testimonial-slide.active .testimonial-quote'));
+        startAutoplay();
+    </script>
+</body>
+</html>
